@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bb{
+    font-size: xxlarge;
+    color: palevioletred;
+    
+}
+body {
+    color: palevioletred;
+    background:whitesmoke;
+}
+.sub-title {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+    padding-top: 30px;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container1 {
+    width: 600px;
+    height: 500px;
+    padding: 75px 90px;
+    margin-left: 120px;   
+}
+.heading {
+    text-align: center;
+    text-decoration: white;
+    text-underline-offset: 10px;
+    text-decoration-thickness: 5px;
+    margin-bottom: 50px;
+    color:darkolivegreen;
+    position: relative;
+    left: -200PX;
+    font-size: xx-large;
+}
+.Technical-bars .bar.info span {
+    font-size: 17px;
+    font-weight: 500;
+    animation: showText 0.5s 1s linear forwards;
+    opacity: 0;
+}
+.Technical-bars .bar .progress-line {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 5px;
+    background-color:pink;
+    animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+    transform: scaleX(0);
+    transform-origin: left;
+    
+}
+.Technical-bars .bar .progress-line span{
+   height: 100%;
+   background-color: palevioletred;
+   position: absolute;
+   border-radius: 10px;
+   animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1)forwards;
+   transform: scaleX(0);
+   transform-origin: left;
+}
+.progress-line.html span{
+    width: 90%;
+   position: relative;
+   left: 0px;
+   
+}
+.progress-line.css span{
+    width: 80%;
+    position: relative;
+   left: 0px;
+} 
+.progress-line.javascript span{
+    width: 70%;
+    position: relative;
+   left: 0px;
+}
+.progress-line.python span{
+    width: 60%;
+    position: relative;
+   left: 0px;
+}
+
+@keyframes animate {
+    100% {
+        transform: scaleX(1);
+    }
+}
+
+
+
+
+
